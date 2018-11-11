@@ -24,7 +24,7 @@ awk 'BEGIN{FS=OFS="."}           # Set the input and output field separator to a
 bash brute-massdns.sh subfinder-clean-"$name".txt \
 	| cut -f1 -d' ' \
 	| grep -oP  "(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]" \
-        >> massdns-full-"$name".out; ludicrousdns -d -n /root/massdns/lists/resolvers-1000.txt massdns-full-"$name".out \
+        >> massdns-full-"$name".out; ludicrousdns -d -n /root/massdns/lists/resolvers.txt massdns-full-"$name".out \
 	| grep -oP  "(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]" \
 	| egrep "^([^ ]*\.)?"$name"\."  \
 	| awk '!(count[$0]++)' \
