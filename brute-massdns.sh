@@ -1,4 +1,4 @@
-
+#!/bin/bash
 file=$1
 
 for domains in $(cat $file)
