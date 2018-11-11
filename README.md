@@ -1,5 +1,4 @@
-# massdns-subrute-reclusive
-
+# massdns-subrute-subdomain_list
 Simple bash tool to Massdns Subrute a list of subdomain.
 
 First you need to install massdns and ludicrousdns
