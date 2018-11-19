@@ -1,7 +1,7 @@
 # massdns-subrute-subdomain_list
 Simple bash tool to Massdns Subrute a list of subdomain.
 
-First you need to install massdns and ludicrousdns
+First you need to install massdns
 
 usage: ./massdns-start.sh subdomains_lists.txt example (here example.* will be in the output)
 
